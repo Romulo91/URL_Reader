@@ -1,0 +1,14 @@
+{
+  "name": "URL-reader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Romulo91/URL-reader.git",
+  "author": "Horst Jahns <horst.jahns@auto1.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsdom": "^16.4.0",
+    "node-fetch": "^2.6.1",
+    "pug": "^3.0.0"
+  }
+}

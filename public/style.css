@@ -1,0 +1,17 @@
+.containerStart {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.url-input {
+  margin: 0 10px 0 10px;
+  height: 25px;
+}

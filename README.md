@@ -14,3 +14,5 @@ Howe to run the Application.
 2. run npm i || yarn on your Terminal
 3. run node index.js on your Terminal
 4. the Application runs on Port: http://localhost:3000/ in your web browser
+
+Have fun....

@@ -11,7 +11,7 @@ Create a web application which takes a website URL as an input and provides gene
 Howe to run the Application.
 
 1. clone ne Repo
-2. npm i or yarn
-3. node index.js
+2. run npm i || yarn on youre Terminal
+3. run on youre Terminal as well node index.js
 
 The Application will run on Port: http://localhost:3000/

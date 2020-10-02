@@ -42,14 +42,29 @@ const parseHtml = (url, responseText) => {
 
   // Log-In Form
 
-  var logForm = dom.window.document.querySelector("form");
-  // var logForm = true;
-  // for (let i = 0; i < doc.forms.length; i++) {
-  //   if (dom.window.document.forms[i].name.toUpperCase().includes("LOGIN")) {
-  //     loginForm = true;
-  //     break;
-  //   }
-  // }
+  var logForm = "no";
+  for (let i = 0; i < dom.window.document.forms.length; i++) {
+    if (dom.window.document.forms[i].name.toUpperCase().includes("LOGIN")) {
+      logForm = "yes";
+      break;
+    }
+  }
+
+  var doctype = dom.window.document.doctype;
+  var str =
+    "<!DOCTYPE " +
+    doctype.name +
+    (doctype.publicId ? ' PUBLIC "' + doctype.publicId + '"' : "") +
+    (!doctype.publicId && doctype.systemId ? " SYSTEM" : "") +
+    (doctype.systemId ? ' "' + doctype.systemId + '"' : "") +
+    ">";
+  var version = "";
+  //more options need to be added:
+  if (str.toUpperCase().includes("HTML 4")) {
+    version = "Html 4.01 or older";
+  } else {
+    version = "Html 5 or newer";
+  }
 
   return {
     title,
@@ -57,6 +72,7 @@ const parseHtml = (url, responseText) => {
     internalLinks,
     headings,
     logForm,
+    version,
   };
 };
 

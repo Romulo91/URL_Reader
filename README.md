@@ -10,8 +10,7 @@ Create a web application which takes a website URL as an input and provides gene
 
 Howe to run the Application.
 
-1. clone ne Repo -> https://github.com/Romulo91/URL_Reader.git
-2. run npm i || yarn on youre Terminal
-3. run on youre Terminal as well node index.js
-
-The Application will run on Port: http://localhost:3000/
+1. clone the Repo -> https://github.com/Romulo91/URL_Reader.git
+2. run npm i || yarn on your Terminal
+3. run node index.js on your Terminal
+4. the Application runs on Port: http://localhost:3000/ in your web browser

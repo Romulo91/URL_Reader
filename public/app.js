@@ -8,12 +8,12 @@ async function handleClick() {
     result.externalLinks;
   document.querySelector(".resultInternallinks").innerHTML =
     result.internalLinks;
-  var i = 0;
-  while (result.headings[i] > 0) {
+
+  for (let i = 0; i < result.headings.length; i++) {
     document.querySelector(".resultHeadings_" + i).innerHTML =
       result.headings[i];
-    i++;
   }
-  document.querySelector(".resultlogForm").innerHTML = result.logForm != null;
-  document.querySelector(".resultHtml").innerHTML = result.html;
+
+  document.querySelector(".resultlogForm").innerHTML = result.logForm;
+  document.querySelector(".resultVersion").innerHTML = result.version;
 }

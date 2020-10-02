@@ -39,7 +39,17 @@ const parseHtml = (url, responseText) => {
       "'], a[href^='/'], a[href^='./'], a[href^='../'], a[href^='#']"
   ).length;
   const externalLinks = (allLinks - internalLinks).toString();
+
+  // Log-In Form
+
   var logForm = dom.window.document.querySelector('form[name="loginform"]');
+  // var logForm = true;
+  // for (let i = 0; i < doc.forms.length; i++) {
+  //   if (dom.window.document.forms[i].name.toUpperCase().includes("LOGIN")) {
+  //     loginForm = true;
+  //     break;
+  //   }
+  // }
 
   return {
     title,

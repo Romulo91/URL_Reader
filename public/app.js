@@ -15,4 +15,5 @@ async function handleClick() {
     i++;
   }
   document.querySelector(".resultlogForm").innerHTML = result.logForm != null;
+  document.querySelector(".resultHtml").innerHTML = result.html;
 }

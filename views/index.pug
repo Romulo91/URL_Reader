@@ -4,37 +4,48 @@ html
     link(rel='stylesheet', href='style.css')
   body
 
+    div.allContent
+      div.containerStart 
+        h1 URL reader
+          input.url-input(type="text")
+          button.cta(onclick="handleClick()") GO
 
-    div.containerStart 
-      h1 URL reader
-        input.url-input(type="text")
-        button.cta(onclick="handleClick()") GO
+      div.container 
+        h3 Title : 
+        div.resulttitle
 
-    div.container 
-      h3 Title : 
-      div.resulttitle
-       
-    div.container 
-      h3 Amount Headings:  
-        div.resultHeadings_0
-        div.resultHeadings_1
-        div.resultHeadings_2
-        div.resultHeadings_3
-        div.resultHeadings_4
-        div.resultHeadings_5
+      div.contHeader   
+        div.container   
+          h3 H1:
+          div.resultHeadings_0
+        div.container
+          h3 H2:
+          div.resultHeadings_1
+        div.container
+          h3 H3 :
+          div.resultHeadings_2
+        div.container
+          h3 H4 : 
+          div.resultHeadings_3
+        div.container
+          h3 H5 : 
+          div.resultHeadings_4
+        div.container
+          h3 H6 : 
+          div.resultHeadings_5
 
-    div.container 
-      h3 Amount of external links:
-      div.resultExternallinks 
+      div.container 
+        h3 Amount of external links:
+        div.resultExternallinks 
 
-    div.container 
-      h3 Amount of internal links:
-      div.resultInternallinks
+      div.container 
+        h3 Amount of internal links:
+        div.resultInternallinks
 
 
-    div.container
-      h3 login-Form: 
-      div.resultlogForm
+      div.container
+        h3 Login-Form: 
+        div.resultlogForm
 
 
     

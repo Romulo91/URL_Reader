@@ -1,17 +1,23 @@
 .containerStart {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  margin-left: 100px;
   gap: 1rem;
 }
 
 .url-input {
   margin: 0 10px 0 10px;
   height: 25px;
+}
+
+.allContent {
+  width: 80%;
 }
